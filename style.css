@@ -14,9 +14,46 @@ hr {
 }
 
 body{
-    background: #080808;
-    color: #fff;
+    background: #ffffff;
+    color: #000000;
 }
+
+/* -----------Side menu--------------- */
+#sidemenu {
+    background-color: white; /* White background */
+    padding: 10px; /* Add padding for spacing */
+    list-style: none; /* Remove default list styles */
+}
+
+#sidemenu li {
+    background-color: white; /* White background for each item */
+    padding: 8px 15px; /* Add padding for better visibility */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+#sidemenu li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Black text color */
+    display: block; /* Make the link fill the list item */
+}
+/* -----------Side menu--------------- */
+
+/* -----------Fonts--------------- */
+.fas.fa-bars {
+    color: #FDB31E; /* Change to white */
+    font-size: 24px; /* Adjust size if needed */
+    cursor: pointer; /* Ensures it's clickable */
+}
+
+.fas.fa-home{
+    color: #FDB31E; /* Change to white */
+    font-size: 24px; /* Adjust size if needed */
+    cursor: pointer; /* Ensures it's clickable */
+}
+
+
+/* -----------Fonts--------------- */
+
 #header{
     width: 100%;
     height: 100vh;
@@ -60,6 +97,10 @@ body{
 .container{
     padding: 10px 10%;
 }
+.container h1{
+    color:#000000
+}
+
 .container1{
     padding: 10px 10%;
     text-align: justify;
@@ -94,7 +135,7 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 170px;
 }
 
 nav ul li{
@@ -104,7 +145,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #030303;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -113,7 +154,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #FFD700;
+    background: #FDB31E;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -131,34 +172,53 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text-pos h1 span{
-    color: #FFD700;
+    color: #FDB31E;
 }
 
 .header-text{
     margin-top: 20%;
     font-size: 60px;
+    
 }
 .header-text p{
     font-size: 60px;
-    color: #ADD8E6;
+    color: #da7474;
+    background-color: #ffffff;
+    display: inline; /* Ensures the background is only behind the text */
+    padding: 5px; /* Optional: Adds slight spacing around the text */
 }
-.header-text-right{
+.header-text-right {
     width: 50%;
     margin-left: 60%;
     margin-bottom: 50%;
-    font-size: 45px;
+    font-size: 30px;
+    color: #6b6964;
+    background-color: rgba(255, 255, 255, 0.5); /* White with 80% opacity */
+    display: inline-flexbox; /* Ensures background wraps around text */
+    padding-right: 10px; /* Adds spacing for better readability */
+    padding-left: 10px; /* Adds spacing for better readability */
+    border-radius: 5px; /* Optional: Soft rounded corners */
 }
 .header-text-right p{
     font-size: 60px;
     color: #ADD8E6;
+}
+.header-text-right h1 span{
+    color: #000000;
 }
 .page1-header-text{
     margin-top: 15%;
 }
 
 .header-text h1{
-    font-size: 60px;
+    
+    font-size: 50px;
     margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* White with 80% opacity */
+    display: inline; /* Ensures the background is only behind the text */
+    padding-right: 10px; /* Optional: Adds slight spacing around the text */   
+    padding-left: 10px; /* Optional: Adds slight spacing around the text */  
+    color:rgba(15, 15, 15, 0.5)
 }
 .page1-header-text h1{
     font-size: 100px;
@@ -168,9 +228,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #FFD700;
 }
-.header-text-right h1 span{
-    color: #FFD700;
-}
+
 .page1-header-text h1 span{
     color: #FFD700;
 }
@@ -185,7 +243,7 @@ nav ul li a:hover::after{
 /* -----------about--------------- */
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #353333;
 }
 .row{
     display: flex;
@@ -404,14 +462,17 @@ nav ul li a:hover::after{
 .contact-right form{
     width: 100%;
 }
+.contact-right p{
+    font-size: 30px;
+}
 form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #e6e3e3;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #252424;
     font-size: 18px;
     border-radius: 6px;
 }
