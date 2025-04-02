@@ -256,6 +256,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
     border-radius: 15px;
 }
 .about-col-2{
