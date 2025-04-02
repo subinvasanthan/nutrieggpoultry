@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subin's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/bd7585b95f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.webp" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Experience</a></li>
+                <li><a href="#portfolio">Knowledge Base</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Senior Manager</p>
+            <h1><span>S</span>ubin<br><span>V</span>asanthan</h1>
+        </div>
+        <div class="header-text-right" class="container2">
+            <h1><span>E</span>xplore my<br><span>J</span>ourney</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.webp">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">
+                    <a href="#header" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>                      
+                    About Me
+                </h1>
+                <p id="totexp"> </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>MAR 2019 – PRESENT</span><br>WPM & MAINTENANCE LEAD<small> @ THALES BAHRAIN</small></li>
+                        <li><span>OCT 2015 – MAR 2019</span><br>CONFIGURATION & CHANGE MANAGER<small> @ THALES OMAN</small></li>
+                        <li><span>APR 2013 – OCT 2015</span><br>SYSTEM INTEGRATION AND INTERFACES LEAD<small> @ ALEC DUBAI, UAE</small></li>
+                        <li><span>AUG 2011 – APR 2013</span><br>SYSTEM INTEGRATION AND INTERFACES LEAD <small> @ SI CONSULT DUBAI, UAE</small></li>
+                        <li><span>JAN 2009 – JUL 2009</span><br>PROJECT ENGINEER<small> @ ELECTROMATIK L.L.C – DUBAI, UAE</small></li>
+                        <li><span>JAN 2007 – DEC 2008</span><br>SENIOR PROJECT ENGINEER <small> @ PACIFIC CONTROL SYSTEMS L.L.C – DUBAI, UAE</small></li>
+                        <li><span>SEP 2004 – NOV 2006</span><br>SERVICE ENGINEER <small> @ COMPUTER SPECIALISTS – BANGALORE, INDIA</small></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2022</span><br>PG in Data Engineering<small> @ Purdue University- US Distant Learning</small></li>
+                        <li><span>2009-2011</span><br>MTech-Microelectronics<small> @ Manipal Institute of Technology, Manipal, INDIA</small></li>
+                        <li><span>2000-2004</span><br>BTech-Electronics & Communication<small> @ Cochin University of Science and Technology, Cochin, INDIA </small></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Python for Computer Vision and LLM</span><yellow>,</yellow><white> Frontend - React (Beginner)</white><yellow>,</yellow><span> AI Automation</span></li>
+                        <li><span>Database - PostgreSQL</span><yellow>,</yellow><white> RabbitMQ</white><yellow>,</yellow><span> AI Agents</span></li>
+                        <li><span>Backend Development - FastAPI</span><yellow>,</yellow><white> Arduino IDE</white><yellow>,</yellow><span> & more..</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">
+            <a href="#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            Experience
+        </h1>
+        <div class="services-list">
+            <div>
+                <!-- the below code fas fa-code is to be downloaded from the https://fontawesome.com/icons website. by this we will have different icons for different codes----- -->
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Integration and Interface Management</h2>
+                <p>Click the below link for details</p>
+                <a href="integration-interface.html" style="text-decoration: underline;">Learn more</a>
+            </div>
+            <div><br>
+                <i class="fa-regular fa-file"></i>
+                <h2>Requirements, Configuration and Change Management</h2>
+                <p>Click the below link for details</p>
+                <a href="requ-config-change.html" style="text-decoration: underline;">Learn more</a>
+            </div>  
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h2>Facial Recognition and Video Analytics</h2>
+                <p>Click the below link for details</p>
+                <a href="fr-va.html" style="text-decoration: underline;">Learn more</a>
+            </div>   
+            <div>
+                <i class="fa-solid fa-atom"></i>
+                <h2>IoT and Automation</h2>
+                <p>Coming Soon............</p>
+                <a href="coming-soon.html" style="text-decoration: underline;">Learn more</a>
+            </div>        
+            <div>
+                <i class="fa-solid fa-plane"></i>
+                <h2>Airport Systems</h2>
+                <p>Coming Soon............</p>
+                <a href="coming-soon.html" style="text-decoration: underline;">Learn more</a>
+            </div>
+                       
+            <div>
+                <i class="fa-solid fa-table"></i>
+                <h2>Data Analytics</h2>
+                <p>Coming Soon............</p>
+                <a href="coming-soon.html" style="text-decoration: underline;">Learn more</a>
+            </div>                        
+           
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Physical Security Systems</h2>
+                <p>Coming Soon............</p>
+                <a href="coming-soon.html" style="text-decoration: underline;">Learn more</a>
+            </div>
+                         
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">
+            <a href="#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>            
+            Knowledge Base
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.webp">
+                <div class="layer">
+                    <h3>Computer Vision</h3>
+                    <p>Explore various insights related to computer vision and Github codes that might help you.</p>
+                    <a href="coming-soon.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.webp">
+                <div class="layer">
+                    <h3>LLMs</h3>
+                    <p>Explore various insights related to LLMs and Github codes that might help you.</p>
+                    <a href="coming-soon.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.webp">
+                <div class="layer">
+                    <h3>AI Automation</h3>
+                    <p>Explore various insights related to AI Automation and Github codes that might help you.</p>
+                    <a href="coming-soon.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">
+                    <a href="#header" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>                      
+                    Contact Me
+                </h1>
+                <p>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:subinvasanthan@gmail.com" target="_blank" style="text-decoration: none; color: inherit;">subinvasanthan@gmail.com</a>
+                </p>
+                <p><i class="fa-solid fa-mobile-screen"></i></i> +97334123752</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/subinvasanthan/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <br>
+                <a href="documents/full_cv.pdf" download class="btn btn2">Download Full CV</a>
+                <a href="documents/one_page_cv.pdf" download class="btn btn2">Download 1-P CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <br><br>
+                <h1 class="sub-title">Write to me</h1>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <br><br>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p id="currentyear"></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHn_unGmHMc9vEdoiJJvyj4WIOY5bhqtpjDM7V9oJkFcanbHGM-l6lk4FXr5KROA0jTg/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    // Experience Calculation
+    const startYear = 2004; // Adjust this based on your experience start year
+    const currentYear = new Date().getFullYear();
+    const totalExperience = currentYear - startYear - 2;
+    const airportExperience = totalExperience - 5; // Adjust based on your specific history
+    document.getElementById("totexp").innerHTML = 
+    `Hello! I'm a passionate management tech enthusiast with over ${totalExperience}+ years of experience in ICT, SAS, and ELV systems, including 
+    ${airportExperience}+ years of leading large-scale airport projects from concept to completion.
+    I specialize in managing complex systems, automation, site operations and energy management services. With a strong background 
+    in AI technologies, I focus on enhancing system efficiency, automating processes, and delivering advanced data analytics solutions 
+    to drive innovation and operational excellence.`;
+
+    document.getElementById("currentyear").innerHTML = `&copy; ${currentYear} Subin Vasanthan - Portfolio`;
+  </script>  
+</body>
+</html>
